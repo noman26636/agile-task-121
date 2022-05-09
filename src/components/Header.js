@@ -35,7 +35,22 @@ import {
                             alt=""
                         />
                     </a>
-                </div>             
+                </div>  
+                {/*Middle*/}
+
+              <div className="max-w-xs">
+                  <div className="relative mt-1 bg-gray-50  rounded-md ">
+                      <div className="absolute inset-y-0 pl-3 flex items-center pointer-events-none">
+                          <SearchIcon className="h-5 w-5 text-gray-500" />
+                      </div>
+                      <input
+                          className="bg-gray-50 block w-full pl-10 sm:text-sm p-2 border-gray-300 focus:border-black rounded-md focus:ring-black "
+                          type="text"
+                          placeholder="Search"
+                      />
+                  </div>
+              </div>
+
             </div>
         </div>
     );
