@@ -7,11 +7,12 @@ import {
   } from "@heroicons/react/outline";
   import { HomeIcon } from "@heroicons/react/solid";
   
-  function Header({ user, setUser }) {
+  function Header() {
   
     return (
         <div className="shadow-md border-b bg-white sticky top-0 p-3 z-50 ">
             <div className="flex justify-between max-w-6xl mx-5 xl:mx-auto ">
+          
                 {/*LeftSide*/}
   
                 <div className="relative hidden lg:inline-grid  w-24 cursor-pointer items-center justify-center">
@@ -36,6 +37,7 @@ import {
                         />
                     </a>
                 </div>  
+          
                 {/*Middle*/}
 
               <div className="max-w-xs">
@@ -49,6 +51,37 @@ import {
                           placeholder="Search"
                       />
                   </div>
+              </div>
+          
+           {/*RightSide*/}
+ 
+          <div className="flex items-center justify-end space-x-4">
+                  <HomeIcon className="navBtn" />
+                  <MenuIcon className="h-12  md:hidden cursor-pointer" />
+
+                  <>
+                      <div className=" relative navBtn">
+                          <PaperAirplaneIcon className="navBtn rotate-45" />
+                          <div className="absolute -top-2 -right-2 text-xs w-5 h-5 bg-red-500 rounded-full flex items-center justify-center animate-pulse text-white">
+                              3
+                          </div>
+                      </div>
+
+                      <UserGroupIcon className="navBtn" />
+                      <HeartIcon className="navBtn" />
+                      <img
+                          className="h-10 w-10 rounded-full cursor-pointer"
+                          src="https://links.papareact.com/jjm"
+                          alt="profile pic"
+                      />
+                  </>
+                
+                  <button
+                      className="text-sm hover:text-neutral-600"
+                 
+                  >
+                      Sign Out
+                  </button>
               </div>
 
             </div>
