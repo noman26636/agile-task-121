@@ -1,6 +1,5 @@
 import { BookmarkIcon, ChatIcon,DotsHorizontalIcon,
     EmojiHappyIcon,HeartIcon,PaperAirplaneIcon} from '@heroicons/react/outline'
-import { useEffect } from 'react';
 
 function Post({largeImageURL,user,userImageURL}) {
      
