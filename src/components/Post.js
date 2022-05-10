@@ -1,21 +1,20 @@
 import { BookmarkIcon, ChatIcon,DotsHorizontalIcon,
     EmojiHappyIcon,HeartIcon,PaperAirplaneIcon} from '@heroicons/react/outline'
-import { useEffect } from 'react';
 
-function Post() {
+function Post({largeImageURL,user,userImageURL}) {
      
   return (
     <div className="bg-white my-8 border rounded-sm">
     {/*Header*/}
     
         <div className="flex items-center p-5">
-        <img className="rounded-full h-12 w-12 object-contain border p-1 mr-3" src="" alt="" />
-        <p className="flex-1 font-bold">noman2</p>
+        <img className="rounded-full h-12 w-12 object-contain border p-1 mr-3" src={userImageURL} alt="" />
+        <p className="flex-1 font-bold">{user}</p>
         <DotsHorizontalIcon className="h-5" />
     </div>
         {/*Image*/}
 
-        <img src="" className="object-cover w-full" alt=""/>
+        <img src={largeImageURL} className="object-cover w-full" alt=""/>
 
 {/*Buttons*/}
 
@@ -31,7 +30,7 @@ function Post() {
   {/*Captions*/}
 
    <p className="p-5 truncate">
-        <span className="font-bold mr-1">noman2</span>
+        <span className="font-bold mr-1">{user}</span>
         hello
    </p>
 
