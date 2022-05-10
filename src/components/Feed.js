@@ -38,9 +38,12 @@ function Feed() {
 
       {/*Posts */}
 
-       <Post />       
+      {photos.map((photo)=> {
+        console.log(photo); 
+        return <Post key={photo.id} largeImageURL={photo.largeImageURL} user={photo.user} userImageURL={photo.userImageURL}/>
+        } 
 
-    
+      )}
 
     </section>
                  
